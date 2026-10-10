@@ -1,0 +1,44 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Generated results
+results/*.csv
+results/*.json
+results/*.log
+
+# Large datasets and model files
+data/raw/
+data/processed/
+*.parquet
+*.pkl
+*.h5
+*.pt
+*.pth
+
+# Keep the small test dataset
+!data/sample/
+!data/sample/*.csv
