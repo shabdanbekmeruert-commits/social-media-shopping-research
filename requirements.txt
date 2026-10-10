@@ -1,0 +1,4 @@
+
+# This project uses Python standard library modules only.
+# No external Python packages are required.
+# Python version: 3.12.7 (defined in Dockerfile).
