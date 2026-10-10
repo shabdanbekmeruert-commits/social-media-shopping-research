@@ -1,0 +1,45 @@
+
+{
+  "project_name": "Social Media Advertising and Online Shopping Behavior",
+  "research_type": "quantitative",
+  "dataset": {
+    "input_file": "data/sample/survey_sample.csv",
+    "output_file": "results/benchmark_results.json",
+    "sample_type": "synthetic_test_data"
+  },
+  "variables": {
+    "independent": [
+      "advertising_exposure",
+      "perceived_credibility"
+    ],
+    "dependent": [
+      "purchase_intention",
+      "purchase_decision"
+    ],
+    "controlled": [
+      "social_media_usage",
+      "shopping_frequency",
+      "monthly_budget"
+    ]
+  },
+  "measurement": {
+    "likert_min": 1,
+    "likert_max": 5,
+    "purchase_decision_values": [0, 1]
+  },
+  "benchmark": {
+    "primary_metric": "spearman_correlation",
+    "secondary_metrics": [
+      "mean_purchase_intention",
+      "purchase_decision_rate",
+      "execution_time"
+    ],
+    "guardrail_metrics": [
+      "missing_value_rate",
+      "valid_response_rate"
+    ],
+    "baseline_correlation": 0.0,
+    "random_seed": 2026,
+    "timeout_seconds": 60
+  }
+}
